@@ -23,7 +23,7 @@ module.exports["run"] = async ({ api, event, args, Users }) => {
         event.threadID
       );
 
-      const apiUrl = `https://liaspark.chatbotcommunity.ltd/@LianeAPI_Reworks/api/ericson?userName=${encodeURIComponent(name)}&key=j86bwkwo-8hako-12C&query=${encodeURIComponent(query)}`;
+      const apiUrl = `https://liaspark.chatbotcommunity.ltd/@LianeAPI_Reworks/api/cassandra?userName=${encodeURIComponent(name)}&key=j86bwkwo-8hako-12C&query=${encodeURIComponent(query)}`;
       const response = await axios.get(apiUrl);
 
       if (response.data && response.data.message) {
